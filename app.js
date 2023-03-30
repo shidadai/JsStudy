@@ -466,15 +466,174 @@
 
 // Write a function called "fib" that takes an integer $n$ as input, and returns the $n$th element of the Fibonacci Sequence.
 //编写一个名为“fib”的函数，该函数以整数$n$为输入，并返回斐波那契序列的第$n$个元素。
-function fib(n){
-    let arr =[0,1];
+// function fib(n){
+//     let arr =[0,1];
+//     let i = 0;
+//     while(arr.length <= n){
+//         arr.push(arr[i] + arr[i+1]);
+//         i++;
+//     }
+//     console.log(arr);
+//     console.log(arr[n]);
+// }
+
+// fib(8);
+
+
+// Write a function called "reverse" that takes a string as input, and returns the reverse string.
+//编写一个名为“reverse”的函数，该函数以字符串作为输入，并返回反向字符串。
+// function reverse(str){
+//     let result="";
+//     for (let i = str.length-1;i>=0;i--){
+//         result += str[i];
+//     }
+// }
+
+// console.log(reverse("abcd")); // returns "dcba"
+// console.log(reverse("I am a good guy.")); // returns ".yug doog a am I"
+
+// Write a function called "swap" that takes a string as input, and returns a new string with lowercase changed to uppercase, uppercase changed to lowercase.
+//编写一个名为“swap”的函数，该函数以字符串为输入，并返回一个新字符串，其中小写变为大写，大写变为小写。
+// function swap(str){
+//     let result = "";
+//     for (let i = 0; i < str.length; i++){
+//         if(str[i] == str[i].toUpperCases){
+//             result += str[i].toLowerCase();
+//         }else{
+//             result += str[i].toUpperCases();
+//         }
+//     }
+//     console.log(result);
+//     return result;
+// }
+
+// Write a function called "findMin" which takes an array as input, and returns the minimum element in the input array.
+//编写一个名为“findMin”的函数，该函数以数组为输入，并返回输入数组中的最小元素。
+// function findMin(arr,n){
+//     for (let i = 0; i< arr.length;i++){
+//             let counter = 0;
+//             for(let j = 0; j < arr.length;j++){
+//                 if(arr[j]< arr[i]){
+//                     counter++;
+//                 }
+//             }
+//             if(counter == n-1){
+//                 return arr[i];
+//             }
+//         }
+//     }
+
+//     console.log(findNthMin([1, 2, 3, 4, 5], 1)); // returns 1
+//     console.log(findNthMin([1, 3, 5, 7, 9], 3)); // returns 5
+
+// Write a function called "mySort" that takes an array of integers as input, and returns the sorted version of the input array.
+// 编写一个名为“mySort”的函数，该函数以整数数组作为输入，并返回输入数组的排序版本。
+    // function findMin(arr){
+    //     let min = arr[0];
+    //     for(let i = 1; i < arr.length;i++){
+    //         if (arr[i] < min){
+    //             min =arr [i];
+    //         }
+    //         return min;
+    //     }
+    // }
+
+    // function mySort(arr){
+    //     let result = [];
+    //     while (arr.length>0){
+    //         let min = findMin(arr);
+    //         result.push(min);
+    //         arr.splice(arr.indexOf(min),1);
+    //     }
+    //     return result;
+    // }
+
+    // console.log(mySort([17, 0, -3, 2, 1, 0.5])); // returns [-3, 0, 0.5, 1, 2, 17]
+
+
+// Write a function called "isPrime" that takes an integer as input, and returns a boolean value that indicates if the input number is prime.
+//编写一个名为“isPrime”的函数，该函数以整数为输入，并返回一个布尔值，指示输入数字是否为素数。
+// function isPrime(n){
+//     if(n == 1){
+//         return false;
+//     }
+
+//     let starter = 2;
+//     while (starter < n){
+//         if (n % starter == 0){
+//             return false;
+//         }
+//         starter++;
+//     }
+
+//     return true;
+// }
+
+// console.log(isPrime(1)); // returns false
+// console.log(isPrime(5)); // returns true
+// console.log(isPrime(91)); // returns false
+// console.log(isPrime(1000000)); // returns false
+
+
+// Write a function called "confirmEnding" that takes 2 strings as input, and returns a boolean value that indicates if the first input ends with the second input.
+// 编写一个名为“confirmEnding”的函数，该函数以2个字符串作为输入，并返回一个布尔值，指示第一个输入是否以第二个输入结束。
+// function confirmEnding(str1,str2){
+//     let k = str1.length-1;
+//     for(let i = str2.length -1; i>=0; i--){
+//         if(str2[i] != str1[k]){
+//             console.log(false);
+//             return false;
+//         }else{
+//             k--;
+//         }
+//     }
+//     console.log(true);
+//     return true;
+// }
+
+
+// confirmEnding("Bastian", "n"); // true
+// confirmEnding("Connor", "n"); // false
+// confirmEnding("Open sesame", "same"); // true
+
+
+// Write a function called "findDuplicate" that an array of integers as inputs, and check if there's any duplicate values in the array.
+//编写一个名为“findDuplicate”的函数，将整数数组作为输入，并检查数组中是否有重复的值。
+// function findDuplicate(arr){
+//     for(let i = 0; i < arr.length; i++){
+//         for(let j = 0; j < arr.length; j++){
+//             if(i != j && arr[i] == arr[j]){
+//                 console.log(true);
+//                 return true;
+//             }
+//         }
+//     }
+//     console.log(false);
+//     return false;
+// }
+
+// findDuplicate([1, 3, 5, 7, 9, 3]); // returns true
+// findDuplicate([]); // returns false
+// findDuplicate([3, 4, 5, 6, 7, 10000, 0]); // returns false 
+
+
+// Write a function called "palindrome" that checks if the input string is a palindrome.
+//编写一个名为“回文”的函数，检查输入字符串是否为回文。
+function palindrome(str){
     let i = 0;
-    while(arr.length <= n){
-        arr.push(arr[i] + arr[i+1]);
+    let j = str.length -1;
+    while (i < j){
+        if (str[i] != str[j]){
+            console.log(false);
+            return false;
+        }
         i++;
+        j--;
     }
-    console.log(arr);
-    console.log(arr[n]);
+    console.log(true);
+    return true;
 }
 
-fib(8);
+palindrome("bearaeb"); // true
+palindrome("Whatever revetahW"); // true
+palindrome("Aloha, how are you today?"); // false
